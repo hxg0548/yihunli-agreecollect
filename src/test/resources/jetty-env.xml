@@ -1,0 +1,13 @@
+ <New id="mysql" class="org.eclipse.jetty.plus.jndi.Resource">  
+     <Arg><Ref refid="Server"/></Arg>  
+     <Arg>jdbc/mysql</Arg>  
+     <Arg>  
+        <New class="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource"> 
+           <Set name="driverClassName">com.mysql.jdbc.Driver</Set>
+           <Set name="Url">jdbc:mysql://112.124.1.214:3306/ewedding</Set>  
+           <Set name="User">root</Set>  
+           <Set name="Password">97ce0bf974</Set> 
+           <Set name="maxActive">10</Set>
+        </New>  
+     </Arg>  
+ </New>

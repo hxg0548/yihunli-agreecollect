@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+	 <New id="mysql" class="org.eclipse.jetty.plus.jndi.Resource">  
+	     <Arg>jdbc/mysql</Arg>  
+	     <Arg>  
+	        <New class="com.mchange.v2.c3p0.ComboPooledDataSource"> 
+	           <Set name="driverClass">com.mysql.jdbc.Driver</Set>
+	           <Set name="jdbcUrl">jdbc:mysql://112.124.1.214:3306/ewedding</Set>  
+	           <Set name="user">root</Set>  
+	           <Set name="password">97ce0bf974</Set> 
+	           <Set name="initialPoolSize" >20</Set>
+	        </New>  
+	     </Arg>  	
+	 </New>
+ </Configure>
