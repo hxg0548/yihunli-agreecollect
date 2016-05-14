@@ -1,0 +1,6 @@
+
+
+
+puvlic class Collect{
+
+}
